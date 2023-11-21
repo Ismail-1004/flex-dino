@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="sidebar">
+        <div class="header">
+            <h1 class="header__title"> Flex Dino </h1>
+            <div class="level__counter">
+                <span class="level__counter-left arrow disabled"> <i class="fa-solid fa-chevron-left"></i> </span>
+                <span class="level__counter-levelIndicator"> 
+                    <span class="level__counter-level"> Уровень </span>
+                    <span class="level__counter-current"> 1 </span>
+                    <span class="level__counter-labelOf"> из </span>
+                    <span class="level__counter-total"> 24 </span>
+                    <span class="level__counter-caret"> <i class="fa-solid fa-caret-down"></i> </span>
+                </span>
+                <span class="level__counter-right arrow"> <i class="fa-solid fa-chevron-right"></i> </span>
+            </div>
+        </div>
+        <div class="editor">
+            <div class="css">
+                <div class="line-numbers">
+                    1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br>
+                </div>
+                <pre class="before">#webstep { <br> &nbsp  display: flex;</pre>
+                <textarea id="code" autofocus="" autocapitalize="none" style="height: 84px;"></textarea>
+                <pre id="after">}</pre>
+            </div>
+        </div>
+    </section>
+    <section id="view">
+        <div class="board">
+            <div class="webstep"></div>
+            <div class="background"></div>
+        </div>  
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
